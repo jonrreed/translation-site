@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+body{
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+#top-pic {
+    color: #fef5de;
+    text-align: center;
+    background-image: url("img/topPic01.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom:27%;
+}
+
+#navlogo{
+    padding-top: 2px;
+}
+
+.no-margin{
+    margin:0;
+}
+
+.info-area{
+    padding: 1em 0 2em 0;
+    font-style: italic;
+}
+
+.color-row{
+    padding:0;
+}
+
+.colorbox{
+    padding: 5em 0;
+    color: #e9ebfe;
+}
+
+.colorbox:hover{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    opacity: 0.6;
+    color: #071017;
+}
+
+.colorbox img{
+    margin: 0 auto;
+}
+
+.color1{
+    background-color:#d3c89b;
+}
+
+.color2{
+    background-color:#d2a56a;
+}
+
+.color3{
+    background-color:#3b78ab;
+}
+
+.color4{
+    background-color:#7997b1;
+}
+
+.blocklink{ 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+
+  /* fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  background-image: url('img/empty.gif');
+}
+
+#footer{
+    padding:2em;
+    text-align: right;
+    color: #d3c89b;
+    background-color: #384652;
+}
+
+@keyframes fadeintext{
+    0% {color:#f8f8f8};
+    100% {color:#071017};
+}
+
+@keyframes fadeinlogo{
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
+
+@-webkit-keyframes fadeintext{
+    0% {color:#e9ebfe};
+    100% {color:#071017};
+}
+
+@-webkit-keyframes fadeinlogo{
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
+
+#fade1{
+    animation-name: fadeintext;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeintext;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+
+#fade2{
+    animation-name: fadeintext;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeintext;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.8s;
+    -webkit-animation-fill-mode: both;
+}
+
+#fade3{
+    animation-name: fadeintext;
+    animation-duration: 1s;
+    animation-delay: 1.6s;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeintext;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.6s;
+    -webkit-animation-fill-mode: both;
+}
+
+#logo-middle{
+    padding-left:50px;
+    animation-name: fadeinlogo;
+    animation-duration: 1.2s;
+    animation-delay: 2.4s;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeinlogo;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-delay: 2.4s;
+    -webkit-animation-fill-mode: both;
+}
+
+.media-body h4{
+    padding-left:20px;
+}
