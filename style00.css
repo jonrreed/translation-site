@@ -85,16 +85,6 @@ body{
     background-color: #384652;
 }
 
-@keyframes fadeintext{
-    0% {color:#f8f8f8};
-    100% {color:#071017};
-}
-
-@keyframes fadeinlogo{
-    0% {opacity: 0};
-    100% {opacity: 1};
-}
-
 @-webkit-keyframes fadeintext{
     0% {color:#e9ebfe};
     100% {color:#071017};
@@ -105,47 +95,57 @@ body{
     100% {opacity: 1};
 }
 
+@keyframes fadeintext{
+    0% {color:#f8f8f8};
+    100% {color:#071017};
+}
+
+@keyframes fadeinlogo{
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
+
 #fade1{
-    animation-name: fadeintext;
-    animation-duration: 1s;
-    animation-fill-mode: both;
     -webkit-animation-name: fadeintext;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both;
+    animation-name: fadeintext;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 #fade2{
-    animation-name: fadeintext;
-    animation-duration: 1s;
-    animation-delay: 0.8s;
-    animation-fill-mode: both;
     -webkit-animation-name: fadeintext;
     -webkit-animation-duration: 1s;
     -webkit-animation-delay: 0.8s;
     -webkit-animation-fill-mode: both;
+    animation-name: fadeintext;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
 }
 
 #fade3{
-    animation-name: fadeintext;
-    animation-duration: 1s;
-    animation-delay: 1.6s;
-    animation-fill-mode: both;
     -webkit-animation-name: fadeintext;
     -webkit-animation-duration: 1s;
     -webkit-animation-delay: 1.6s;
     -webkit-animation-fill-mode: both;
+    animation-name: fadeintext;
+    animation-duration: 1s;
+    animation-delay: 1.6s;
+    animation-fill-mode: both;
 }
 
 #logo-middle{
+    -webkit-animation-name: fadeinlogo;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-delay: 2.4s;
+    -webkit-animation-fill-mode: both;
     padding-left:50px;
     animation-name: fadeinlogo;
     animation-duration: 1.2s;
     animation-delay: 2.4s;
     animation-fill-mode: both;
-    -webkit-animation-name: fadeinlogo;
-    -webkit-animation-duration: 1.2s;
-    -webkit-animation-delay: 2.4s;
-    -webkit-animation-fill-mode: both;
 }
 
 .media-body h4{
